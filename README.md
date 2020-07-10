@@ -12,10 +12,10 @@ This repository includes the programming exercises from the MSDS technical boot 
 
 * hackathon includes a timed exercise to replicate COVID-19 data visualizations. Data were downloaded from Our World in Data's github repository (https://github.com/owid/covid-19-data/tree/master/public/data). 
 
- * My replication of the line plot:
+  * My replication of the line plot:
 
 ![line_plot](/hackathon/output/line_plot.png)
 
- * My replication of the world map figure:
+  * My replication of the world map figure:
 
 ![world_map](/hackathon/output/world_map.png)
