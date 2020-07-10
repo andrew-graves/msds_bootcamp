@@ -2,8 +2,8 @@
 
 # To install palmer penguins, run 
 # the following commented-out line:
-
 # remotes::install_github("allisonhorst/palmerpenguins")
+
 library(tidyverse)
 library(palmerpenguins)
 
@@ -11,18 +11,15 @@ data(penguins)
 
 penguins %>% 
   drop_na() %>%
-  ggplot(aes(flipper_length_mm, body_mass_g, 
-             color = species, fill = species)) +
-  geom_point() +
-  geom_smooth(method = "lm", 
+  ggplot(aes(flipper_length_mm, body_mass_g, color = species)) +
+  geom_point(size = 0.5) +
+  geom_smooth(method = "lm", se = FALSE,
               formula = "y ~ x") + 
   scale_color_brewer(palette = "Dark2") + 
-  scale_fill_brewer(palette = "Dark2") + 
-  labs(x = "Flipper Length (mm)", y = "Body Mass (g)", 
-       color = "Species", fill = "Species",
+  labs(x = "Flipper Length (mm)", y = "Body Mass (g)", color = "Species",
        title = "Flipper length is positively correlated with body mass") +
   theme_classic() + 
-  theme(text = element_text(family = "serif", size = 12),
+  theme(text = element_text(family = "serif", size = 8),
         plot.title = element_text(hjust = 0.5))
 
-ggsave("output/create_plot.png", width = 5, height = 3)#, scale = 0.5)
+ggsave("output/create_plot.png", width = 5, height = 3, scale = 0.7)
