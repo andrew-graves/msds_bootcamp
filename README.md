@@ -7,3 +7,5 @@ This repository includes the programming exercises from the MSDS technical boot 
 - module_5 involves solving timing and user-input tasks in Python and R.
 
 - module_6 includes basic data visualizations in Python and R.
+
+![GitHub Logo](/images/logo.png)
