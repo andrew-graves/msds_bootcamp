@@ -5,4 +5,4 @@ read_csv("data/andre.csv") %>%
   ggplot(aes(H)) + 
   geom_histogram()
 
-ggsave("output/recreate_plot.png")
+ggsave("output/recreate_plot.png", scale = 0.5)

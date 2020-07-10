@@ -1,24 +1,24 @@
 {
-    "id": "40AC1B30",
+    "id": "64B5F7EC",
     "path": "~/University of Virginia/Course Work/Summer 2020/msds_bootcamp/module_6/r/scripts/create.R",
     "project_path": "scripts/create.R",
     "type": "r_source",
-    "hash": "2326122005",
+    "hash": "2675900884",
     "contents": "",
-    "dirty": true,
-    "created": 1594314069579.0,
+    "dirty": false,
+    "created": 1594393028808.0,
     "source_on_save": false,
     "relative_order": 2,
     "properties": {
-        "cursorPosition": "19,32",
-        "scrollLine": "5"
+        "cursorPosition": "28,0",
+        "scrollLine": "14"
     },
     "folds": "",
-    "lastKnownWriteTime": 1594335075,
+    "lastKnownWriteTime": 1594393820,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1594335097501,
+    "last_content_update": 1594393820119,
     "read_only": false,
     "read_only_alternatives": []
 }
