@@ -137,7 +137,6 @@ line_plot <- covid_dat %>%
   hack_theme
 
 ggsave("output/line_plot.png")
-2 + 2
 line_plot
 ```
 
