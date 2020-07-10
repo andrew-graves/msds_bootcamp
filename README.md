@@ -8,4 +8,4 @@ This repository includes the programming exercises from the MSDS technical boot 
 
 - module_6 includes basic data visualizations in Python and R.
 
-![GitHub Logo](/images/logo.png)
+![GitHub Logo](/hackathon/output/line_plot.png)
