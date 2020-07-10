@@ -136,7 +136,7 @@ line_plot <- covid_dat %>%
         axis.line = element_blank()) +
   hack_theme
 
-ggsave("output/line_plot.png", height = 3, width = 3)
+ggsave("output/line_plot.png", scale = 0.5)
 line_plot
 ```
 
@@ -171,6 +171,6 @@ map_fig <- map_dat %>%
         legend.key.width = unit(2, "cm")) +
   hack_theme
 
-ggsave("output/world_map.png", height = 3, width = 3)
+ggsave("output/world_map.png", scale = 0.5)
 map_fig
 ```
