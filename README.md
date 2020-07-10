@@ -19,3 +19,8 @@ This repository includes the programming exercises from the MSDS technical boot 
 -- My replication of the world map figure:
 
 ![world_map](/hackathon/output/world_map.png)
+
+* Item 1
+* Item 2
+  * Item 2a
+  * Item 2b
