@@ -1,0 +1,68 @@
+---
+title: "Hackathon"
+author: "Andrew J. Graves"
+date: "7/10/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Load packages
+```{r pckgs}
+library(tidyverse)
+library(lubridate)
+```
+
+## Load and tidy data
+
+```{r load_tidy}
+covid_dat <- read_csv("data/owid-covid-data.csv") %>%
+  select(iso_code, location, date, total_cases_per_million) %>%
+  mutate(date = mdy(date)) %>%
+  filter(date <= as_date("2020-05-08") & 
+         date >= as_date("2020-01-20"))
+```
+
+## Set parameters for line-plot figure
+
+```{r line_params}
+loc_fig1 <- c("United States", "United Kingdom", 
+              "World", "South Korea", "China")
+
+titles <- c("Total confirmed COVID-19 cases per million people",
+            paste("The number of confirmed cases is lower than the",
+                  "number of total cases. The main reason for this",
+                  "is limited testing.")
+  )
+
+hex <- RColorBrewer::brewer.pal(n = length(loc_fig1), name = "Set1")
+hex_colors <- hex[c(4, 5, 3, 1, 2)]
+
+date_breaks <- paste0("2020-", 
+                      c("01-22", "03-01", "04-10", "05-08")) %>%
+  as_date()
+date_labels <- paste0(c("Jan 22", "Mar 1", "Apr 10", "May 8"), ", 2020")
+```
+
+## Create the line-plot figure
+
+```{r line_plot}
+covid_dat %>%
+  filter(location %in% loc_fig1) %>%
+  mutate(location = fct_relevel(
+                      as_factor(location), loc_fig1)
+         ) %>%
+  ggplot(aes(x = date, y = total_cases_per_million, 
+             color = location)) + 
+  geom_line() + 
+  scale_x_continuous(breaks = date_breaks,
+                     labels = date_labels) +
+  scale_y_log10(n.breaks = 6,
+    labels = function(x) sprintf("%g", x)) +
+  scale_color_manual(values = hex_colors) +
+  labs(x = "", y = "", color = "",
+       title = titles[1], subtitle = titles[2]) +
+  theme_classic()
+```
