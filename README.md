@@ -14,8 +14,8 @@ This repository includes the programming exercises from the MSDS technical boot 
 
   * My replication of the line plot:
 
-![line_plot](/hackathon/output/line_plot.png)
+  ![line_plot](/hackathon/output/line_plot.png)
 
   * My replication of the world map figure:
 
-![world_map](/hackathon/output/world_map.png)
+  ![world_map](/hackathon/output/world_map.png)
