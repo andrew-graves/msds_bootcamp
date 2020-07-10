@@ -4,23 +4,18 @@ This repository includes the programming exercises from the MSDS technical boot 
 
 ## Thursday 07/09/20
 
-- module_5 involves solving timing and user-input tasks in Python and R.
+* module_5 involves solving timing and user-input tasks in Python and R.
 
-- module_6 includes basic data visualizations in Python and R.
+* module_6 includes basic data visualizations in Python and R.
 
 ## Friday -7/10/20
 
-- hackathon includes a timed exercise to replicate COVID-19 data visualizations. Data were downloaded from Our World in Data's github repository (https://github.com/owid/covid-19-data/tree/master/public/data). 
+* hackathon includes a timed exercise to replicate COVID-19 data visualizations. Data were downloaded from Our World in Data's github repository (https://github.com/owid/covid-19-data/tree/master/public/data). 
 
--- My replication of the line plot:
+ * My replication of the line plot:
 
 ![line_plot](/hackathon/output/line_plot.png)
 
--- My replication of the world map figure:
+ * My replication of the world map figure:
 
 ![world_map](/hackathon/output/world_map.png)
-
-* Item 1
-* Item 2
-  * Item 2a
-  * Item 2b
