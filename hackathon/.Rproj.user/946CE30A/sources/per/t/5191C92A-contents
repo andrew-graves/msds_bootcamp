@@ -1,0 +1,5 @@
+prompts <- list("Please provide your first input: ",
+                "Now your second input: ",
+                "Finally, your third input: ")
+
+print(lapply(prompts, readline))

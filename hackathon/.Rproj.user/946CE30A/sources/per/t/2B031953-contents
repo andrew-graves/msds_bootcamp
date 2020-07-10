@@ -1,0 +1,10 @@
+stopwatch <- function(time){
+  #if(is.numeric(time)){
+  start <- Sys.time()
+  Sys.sleep(time)
+  #}
+  print(Sys.time() - start)
+}
+
+time_input <- readline("Test waiting time by typing a number in seconds: ")
+stopwatch(time_input)

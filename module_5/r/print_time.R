@@ -1,0 +1,3 @@
+print(paste("The current time is", format(Sys.time(), "%H:%M")))
+
+      
