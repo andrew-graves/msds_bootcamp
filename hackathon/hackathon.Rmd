@@ -45,6 +45,7 @@ join_names <- covid_dat %>%
        "United States Virgin Islands" = "Virgin Islands",
        "British Virgin Islands" = "Virgin Islands",
        "United Kingdom" = "UK",
+       "Gibraltar" = "UK",
        "Democratic Republic of Congo" = 
          "Democratic Republic of the Congo",
        "Congo" = "Republic of Congo",
@@ -55,7 +56,9 @@ join_names <- covid_dat %>%
        "Saint Kitts and Nevis" = "Saint Kitts",
        "Faeroe Islands" = "Faroe Islands",
        "Bonaire Sint Eustatius and Saba" = "Bonaire",
-       "Antigua and Barbuda" = "Antigua"
+       "Antigua and Barbuda" = "Antigua",
+       "Cote d'Ivoire" = "Ivory Coast",
+       "Hong Kong" = "China"
   ))
 
 map_dat <- map_data("world") %>%
